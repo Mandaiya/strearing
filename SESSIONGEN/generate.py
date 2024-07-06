@@ -34,24 +34,24 @@ import config
 
 
 
-ask_ques = "**☞︎︎︎ ᴄʜᴏᴏsᴇ ᴏɴᴇ ᴛʜᴀᴛ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ɢᴇɴᴇʀᴀᴛᴇ sᴇssɪᴏɴ 𖤍 ✔️ **"
+ask_ques = "**☞︎︎|-〄 ᴄʜᴏᴏꜱᴇ ᴀɴ ᴡᴇᴀᴘᴏɴ ꜰᴏʀ ʏᴏᴜʀ ɢᴀᴍᴇ 〄-|**"
 buttons_ques = [
     [
-        InlineKeyboardButton("𝙿𝚈𝚁𝙾𝙶𝚁𝙰𝙼 💗", callback_data="pyrogram"),
-        InlineKeyboardButton("𝙿𝚈𝚁𝙾𝙶𝚁𝙰𝙼 𝚅2 💗", callback_data="pyrogram"),
+        InlineKeyboardButton("𝘗𝘠𝘙𝘖𝘎𝘙𝘈𝘔 ⦾-", callback_data="pyrogram"),
+        InlineKeyboardButton("𝘗𝘠𝘙𝘖𝘎𝘙𝘈𝘔 𝘝2 ⦾-", callback_data="pyrogram"),
     ],
     [
-        InlineKeyboardButton("𝚃𝙴𝙻𝙴𝚃𝙷𝙾𝙽 💻", callback_data="telethon"),
+        InlineKeyboardButton("𝘛𝘌𝘓𝘌𝘛𝘏𝘖𝘕 ⚘", callback_data="telethon"),
     ],
     [
-        InlineKeyboardButton("𝙿𝚈𝚁𝙾𝙶𝚁𝙰𝙼 𝙱𝙾𝚃 🤖", callback_data="pyrogram_bot"),
-        InlineKeyboardButton("𝚃𝙴𝙻𝙴𝚃𝙷𝙾𝙽 𝙱𝙾𝚃 🤖", callback_data="telethon_bot"),
+        InlineKeyboardButton("𝙿𝚈𝚁𝙾𝙶𝚁𝙰𝙼 𝙱𝙾𝚃 ", callback_data="pyrogram_bot"),
+        InlineKeyboardButton("𝚃𝙴𝙻𝙴𝚃𝙷𝙾𝙽 𝙱𝙾𝚃 ", callback_data="telethon_bot"),
     ],
 ]
 
 gen_button = [
     [
-        InlineKeyboardButton(text="𝙶𝙴𝙽𝚁𝙰𝚃𝙴 𝚂𝙴𝚂𝚂𝙸𝙾𝙽 𖤍", callback_data="generate")
+        InlineKeyboardButton(text="|-〄 STRINGENE 〄-|", callback_data="generate")
     ]
 ]
 
@@ -72,9 +72,9 @@ async def generate_session(bot: Client, msg: Message, telethon=False, old_pyro: 
             ty += " 𝖵2"
     if is_bot:
         ty += " 𝖡𝖮𝖳"
-    await msg.reply(f"» ᴛʀʏɪɴɢ ᴛᴏ sᴛᴀʀᴛ **{ty}** sᴇssɪᴏɴ ɢᴇɴʀᴀᴛᴏʀ...")
+    await msg.reply(f"» ᴛʀʏɪɴɢ ᴛᴏ ɢᴀᴛʜᴇʀ ᴛʜᴇ ᴅᴀᴛᴀ --->>  **{ty}** STRINGENE Generator...")
     user_id = msg.chat.id
-    api_id_msg = await bot.ask(user_id, "ᴘʟᴇᴀsᴇ sᴇɴᴅ ʏᴏᴜʀ **ᴀᴘɪ_ɪᴅ** ᴛᴏ ᴘʀᴏᴄᴇᴇᴅ.\n\nᴄʟɪᴄᴋ ᴏɴ /skip 𝖥ғᴏʀ ᴜsɪɴɢ ʙᴏᴛ ᴀᴘɪ.", filters=filters.text)
+    api_id_msg = await bot.ask(user_id, "ᴾˡᵉᵃˢᵉ ᴾᵃˢˢ ʸᵒᵘʳ **ᴀᴘɪ_ɪᴅ** ᴛᴏ ᴘʀᴏᴄᴇᴇᴅ.\n\nᴄʟɪᴄᴋ ᴏɴ /skip 𝖥ғᴏʀ ᴜsɪɴɢ ʙᴏᴛ ᴀᴘɪ.", filters=filters.text)
     if await cancelled(api_id_msg):
         return
     if api_id_msg.text == "/skip":
@@ -174,7 +174,7 @@ async def generate_session(bot: Client, msg: Message, telethon=False, old_pyro: 
         string_session = client.session.save()
     else:
         string_session = await client.export_session_string()
-    text = f"**ᴛʜɪs ɪs ʏᴏᴜʀ {ty} sᴛʀɪɴɢ sᴇssɪᴏɴ** \n\n`{string_session}` \n\n**ɢᴇɴʀᴀᴛᴇᴅ ʙʏ :[𝙹𝙰𝚁𝚅𝙸𝚂](https://t.me/Strings_Gen_Robot) ᴡᴀʀɴɪɴɢ :** ᴅᴏɴᴛ sʜᴀʀᴇ ᴡɪᴛʜ ᴀɴʏᴏɴᴇ ᴇᴠᴇɴ ɪғ ᴡɪᴛʜ ʏᴏᴜʀ ɢғ 🏴‍☠️"
+    text = f"**ᴛʜɪs ɪs ʏᴏᴜʀ {ty} sᴛʀɪɴɢ sᴇssɪᴏɴ** \n\n`{string_session}` \n\n**ɢᴇɴʀᴀᴛᴇᴅ ʙʏ :[┣▇-𝚂𝚅𝙳 ▇-->](https://t.me/Soupboy_single)  ᴡᴀʀɴɪɴɢ :** ᴅᴏɴᴛ sʜᴀʀᴇ ᴡɪᴛʜ ᴀɴʏᴏɴᴇ ᴇᴠᴇɴ ɪғ ᴡɪᴛʜ ʏᴏᴜʀ ɢғ or ᴮᶠ 🏴‍☠️"
     try:
         if not is_bot:
             await client.send_message("me", text)
