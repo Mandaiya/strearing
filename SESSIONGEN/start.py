@@ -24,7 +24,7 @@ async def start(bot: Client, msg: Message):
                     InlineKeyboardButton(text="|-〄 STRINGENE 〄-|", callback_data="generate")
                 ],
                 [
-                    InlineKeyboardButton(-🔫 Gamers Society -🔫", url="https://t.me/smarhkarts_gAme"),
+                    InlineKeyboardButton("-🔫 Gamers Society 🔫-", url="https://t.me/smarhkarts_gAme"),
                     InlineKeyboardButton("|-⦾ Network ⦾-|", url="https://t.me/we_are_universee")
                 ]
             ]
