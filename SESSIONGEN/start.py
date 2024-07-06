@@ -13,19 +13,19 @@ async def start(bot: Client, msg: Message):
     await msg.reply_text(
         text=f"""ʜᴇʏ {msg.from_user.mention},
 
-ᴛʜɪs ɪs {me},
-ɪ ᴄᴀɴ ʜᴇʟᴘ ʏᴏᴜ ᴛᴏ ɢᴇɴᴇʀᴀᴛᴇ ᴀʟʟ ᴛʏᴘᴇ ᴏғ sᴇssɪᴏɴs..
-ᴄʟɪᴄᴋ ᴏɴ ɢᴇɴᴇʀᴀᴛᴇ sᴇssɪᴏɴ ᴛᴏ ɢᴇɴᴇʀᴀᴛᴇ sᴛʀɪɴɢ sᴇssɪᴏɴ!
+ᴡᴇʟᴄᴏᴍᴇ ! {me},
+╰★ I am an Stringene Robot - use me to generate the strings for your Bots ★╯
+ᴅᴏɴ'ᴛ ᴡᴀꜱᴛᴇ ʏᴏᴜʀ ᴠᴀʟᴜᴀʙʟᴇ ᴛɪᴍᴇ ᴀɴᴅ ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ " 𝐒𝐭𝐫𝐢𝐧𝐠𝐞𝐧𝐞 "!!
 
-ᴍᴀᴅᴇ ʙʏ: [ᴊᴀʀᴠɪs](https://t.me/JARVIS_V2) !""",
+𝘾𝙧𝙚𝙖𝙩𝙤𝙧: [┣▇-𝚂𝚅𝙳 ▇-->](https://t.me/Soupboy_single) !""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton(text="𖤍 ɢᴇɴᴇʀᴀᴛᴇ sᴇssɪᴏɴ 𖤍", callback_data="generate")
+                    InlineKeyboardButton(text="|-〄 STRINGENE 〄-|", callback_data="generate")
                 ],
                 [
-                    InlineKeyboardButton("ꨄ︎ sᴜᴘᴘᴏʀᴛ ꨄ︎", url="https://t.me/Dora_Hub"),
-                    InlineKeyboardButton("ఌ︎ ᴄʜᴀɴɴᴇʟ ఌ︎", url="https://t.me/JARVIS_V_SUPPORT")
+                    InlineKeyboardButton(-🔫 Gamers Society -🔫", url="https://t.me/smarhkarts_gAme"),
+                    InlineKeyboardButton("|-⦾ Network ⦾-|", url="https://t.me/we_are_universee")
                 ]
             ]
         ),
